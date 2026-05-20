@@ -67,6 +67,11 @@ litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 
     * litemall_schema.sql
     * litemall_table.sql
     * litemall_data.sql
+    ```
+    mysql -u root < /Users/liuyihan/Documents/GitHub/litemall/litemall-db/sql/litemall_schema.sql
+    mysql -u root litemall < /Users/liuyihan/Documents/GitHub/litemall/litemall-db/sql/litemall_table.sql
+    mysql -u root litemall < /Users/liuyihan/Documents/GitHub/litemall/litemall-db/sql/litemall_data.sql
+    ```
 
 3. 启动小商场和管理后台的后端服务
 
@@ -83,7 +88,7 @@ litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 
     打开命令行，输入以下命令
     ```bash
     cd litemall/litemall-admin
-    npm install --registry=https://registry.npm.taobao.org
+    npm install --registry=https://registry.npmmirror.com
     npm run dev
     ```
     此时，浏览器打开，输入网址`http://localhost:9527`, 此时进入管理后台登录页面。
@@ -106,7 +111,7 @@ litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 
     打开命令行，输入以下命令
     ```bash
     cd litemall/litemall-vue
-    npm install --registry=https://registry.npm.taobao.org
+    npm install --save regenerator-runtime
     npm run dev
     ```
     此时，浏览器（建议采用chrome 手机模式）打开，输入网址`http://localhost:6255`, 此时进入轻商场。
